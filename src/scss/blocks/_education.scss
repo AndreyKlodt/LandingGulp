@@ -1,0 +1,29 @@
+.education {
+  max-width: 70%;
+  &__text {
+  }
+
+  &__text-title {
+    @include bold;
+    font-size: 27px;
+    margin-bottom: 10px;
+  }
+
+  &__text-school {
+    color: rgb(117, 117, 117);
+    font-size: 22px;
+    // padding-bottom: 15px;
+  }
+
+  &__text-description {
+    font-size: 20px;
+    @include mediumItalic;
+    opacity: 0.9;
+  }
+}
+.gold-text {
+}
+.title {
+}
+.subtitle {
+}

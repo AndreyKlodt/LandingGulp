@@ -1,0 +1,78 @@
+/* montserrat-regular - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/montserrat-v15-latin_cyrillic-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/montserrat-v15-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/montserrat-v15-latin_cyrillic-regular.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/montserrat-v15-latin_cyrillic-regular.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/montserrat-v15-latin_cyrillic-regular.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/montserrat-v15-latin_cyrillic-regular.svg#Montserrat") format("svg"); /* Legacy iOS */
+}
+/* montserrat-500italic - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat MediumItalic";
+  font-style: italic;
+  font-weight: 500;
+  src: url("../fonts/montserrat-v15-latin_cyrillic-500italic.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/montserrat-v15-latin_cyrillic-500italic.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/montserrat-v15-latin_cyrillic-500italic.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/montserrat-v15-latin_cyrillic-500italic.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/montserrat-v15-latin_cyrillic-500italic.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/montserrat-v15-latin_cyrillic-500italic.svg#Montserrat") format("svg"); /* Legacy iOS */
+}
+/* montserrat-600 - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat Semibold";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/montserrat-v15-latin_cyrillic-600.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/montserrat-v15-latin_cyrillic-600.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/montserrat-v15-latin_cyrillic-600.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/montserrat-v15-latin_cyrillic-600.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/montserrat-v15-latin_cyrillic-600.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/montserrat-v15-latin_cyrillic-600.svg#Montserrat") format("svg"); /* Legacy iOS */
+}
+/* montserrat-600italic - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat SemiboldItalic";
+  font-style: italic;
+  font-weight: 600;
+  src: url("../fonts/montserrat-v15-latin_cyrillic-600italic.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/montserrat-v15-latin_cyrillic-600italic.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/montserrat-v15-latin_cyrillic-600italic.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/montserrat-v15-latin_cyrillic-600italic.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/montserrat-v15-latin_cyrillic-600italic.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/montserrat-v15-latin_cyrillic-600italic.svg#Montserrat") format("svg"); /* Legacy iOS */
+}
+/* montserrat-700 - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/montserrat-v15-latin_cyrillic-700.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/montserrat-v15-latin_cyrillic-700.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/montserrat-v15-latin_cyrillic-700.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/montserrat-v15-latin_cyrillic-700.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/montserrat-v15-latin_cyrillic-700.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/montserrat-v15-latin_cyrillic-700.svg#Montserrat") format("svg"); /* Legacy iOS */
+}
+
+@mixin regular {
+  font-family: Montserrat Reqular, Arial, Helvetica, sans-serif;
+}
+@mixin mediumItalic {
+  font-family: Montserrat MediumItalic, Arial, Helvetica, sans-serif;
+}
+
+@mixin semibold {
+  font-family: Montserrat Semibold, Arial, Helvetica, sans-serif;
+}
+@mixin semiboldItalic {
+  font-family: Montserrat SemiboldItalic, Arial, Helvetica, sans-serif;
+}
+
+@mixin bold {
+  font-family: Montserrat Bold, Arial Black, Gadget, sans-serif;
+}

@@ -1,0 +1,47 @@
+header {
+  background-color: rgb(0, 0, 0);
+  @include semibold;
+}
+.header-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header-logo {
+  position: relative;
+}
+.header-links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  &__item {
+    font-size: 23px;
+    color: white;
+    position: relative;
+  }
+  &__item::after {
+    background-color: #ffffff;
+    display: block;
+    content: "";
+    height: 1.4px;
+    width: 0%;
+    transition: width 0.4s ease-in-out;
+  }
+  &__item:hover::after {
+    width: 100%;
+  }
+  &__item--gold {
+    color: #f4da98;
+  }
+  &__item--gold::before {
+    content: "";
+    height: 100%;
+    position: absolute;
+    left: -15px;
+    width: 2px;
+    background-color: rgba(255, 255, 255, 0.452);
+  }
+}
+.header-links__item-wrapper {
+  padding: 0px 15px 0px 15px;
+}

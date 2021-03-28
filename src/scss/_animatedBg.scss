@@ -1,0 +1,18 @@
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  animation: spaceJam 120s linear infinite;
+}
+
+.background {
+  background: url("../img/bg_1.png");
+}
+
+@keyframes spaceJam {
+  100% {
+    background-position: -2500px -500px;
+  }
+}

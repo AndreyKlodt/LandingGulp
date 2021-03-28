@@ -1,0 +1,63 @@
+.contacts {
+  form {
+  }
+  textarea {
+    resize: none;
+  }
+  input,
+  textarea {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.527);
+    color: rgba(255, 255, 255, 0.884);
+    font-size: 19px;
+    outline: none;
+    padding: 17px 18px 17px 18px;
+  }
+  input:focus,
+  textarea:focus {
+    border-color: #f4da98;
+  }
+
+  input:first-child {
+    display: block;
+
+    margin-bottom: 3%;
+  }
+}
+.form-group {
+  margin-right: 2%;
+}
+.contacts-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+.form {
+  display: flex;
+}
+.form__button {
+  width: 100%;
+}
+
+.contacts-list {
+  font-size: 25px;
+  line-height: 50px;
+  list-style: none;
+
+  &__item span {
+    color: #f4da98;
+    display: inline-block;
+
+    @include bold;
+  }
+  &__item a {
+    color: #fff;
+    padding-left: 10px;
+    @include regular;
+  }
+  &__item a:hover svg path {
+    fill: rgba(255, 255, 255, 0.856);
+  }
+  &__item a:hover {
+    color: rgba(255, 255, 255, 0.856);
+  }
+}

@@ -1,0 +1,27 @@
+// basic styles
+body {
+  background-color: black;
+  color: white;
+  @include regular;
+}
+.container {
+  max-width: 1204px;
+  margin: 0 auto;
+  cursor: default;
+}
+.gold-text {
+  color: #f4da98;
+}
+main {
+}
+
+a {
+  text-decoration: none;
+}
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
