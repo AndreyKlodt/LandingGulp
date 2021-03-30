@@ -1,0 +1,145 @@
+@media (max-width: 874px) {
+  .contacts-wrapper {
+    padding-top: 0;
+  }
+  .button-wrapper {
+    flex-wrap: wrap;
+  }
+  //forms
+  .form-group {
+    margin-right: 0;
+  }
+  #email {
+    margin-bottom: 2%;
+  }
+  .contacts-wrapper {
+    flex-direction: column;
+  }
+  .contacts-wrapper,
+  .form {
+    flex-direction: column;
+  }
+  .formData,
+  .contacts-list {
+    max-width: 100%;
+  }
+  //title
+  .title {
+    font-size: 50px;
+  }
+  //burger
+  .header-burger {
+    width: 40px;
+    height: 28px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .header-burger__line {
+    display: block;
+    width: 100%;
+    min-height: 3px;
+    background-color: rgb(255, 255, 255);
+  }
+  .header-burger__middle-line {
+    transition: 0.3s;
+    width: 70%;
+  }
+
+  .header-container {
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    z-index: 2;
+  }
+  header {
+  }
+
+  nav {
+    opacity: 0;
+    transform: scale(0);
+    transition-timing-function: ease-in;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    transition: 0.5s;
+    right: -1050px;
+    height: 380px;
+    background: #000;
+    top: 125px;
+    width: 100%;
+  }
+  .header-links__item--gold::before {
+    display: none;
+  }
+  // About text
+  .about__upper-text {
+    line-height: 40px;
+  }
+  // skills section
+  .skills__card-wrapper {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 736px) {
+  .subtitle {
+    max-width: 100%;
+  }
+  .title::after,
+  .title::before {
+    display: none;
+  }
+  .about__button {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  //about text
+  .about__main-text {
+    font-size: 40px;
+  }
+  .about__upper-text {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 444px) {
+  //modal
+
+  .modal {
+    height: 220px;
+  }
+  .modal__title {
+    font-size: 27px;
+  }
+  .modal__text {
+    font-size: 17px;
+  }
+
+  .education__text-title {
+    font-size: 25px;
+  }
+  #home {
+    padding-top: 0;
+  }
+  .education__text-school {
+    font-size: 20px;
+  }
+  .education__text-description {
+    font-size: 18px;
+  }
+  .title {
+    font-size: 40px;
+  }
+  .about__main-text {
+    font-size: 32px;
+    padding-left: 0;
+    line-height: 40px;
+  }
+  .contacts-list {
+    font-size: 19px;
+  }
+}

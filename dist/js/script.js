@@ -1,7 +1,38 @@
+//anim of sections
+AOS.init();
 
+// typed js
 var typed = new Typed('#typed', {
-  strings: [' <p class="about__upper-text">Привет, Меня зовут Андрей.</p> <p class="gold-text about__main-text">Я — FullStack разработчик.</p> <p class="about__lower-text">На этом сайте можно ознакомиться с моими <a class="gold-text" href="#">работами</a> и <a class="gold-text" href="#">связаться</a> со мной.</p> <button class="about__button">Написать мне</button> <button class="about__button">Скачать резюме</button>'],
+  strings: [" <p class='about__upper-text'>Привет, Меня зовут Андрей.</p> <p class='gold-text about__main-text'>Я — FullStack разработчик.</p> <p class='about__lower-text'>На этом сайте можно ознакомиться с моими <a class='gold-text' href='#'>работами</a> и <a class='gold-text' href='#'>связаться</a> со мной.</p> <div class = 'button-wrapper'> <a class='about__button btn' href = '#contacts'>Написать мне</a> <a class='about__button btn' href = 'img/cv.pdf' download>Скачать резюме</a></div>"],
   typeSpeed: 35
 });
 
+//burger
+const burger = document.querySelector('.header-burger');
+const nav = document.querySelector('.header-links');
+const body = document.querySelector('body');
+const blackout = document.querySelector('.blackout'); // Затемнение
+const burgerLine = document.querySelector('.header-burger__middle-line');
+burger.addEventListener('click', () => {
+  nav.classList.toggle('active');
+  body.classList.toggle('active');
+  burgerLine.classList.toggle('active');
+  blackout.classList.toggle('active');
+});
 
+
+//forms
+const form = document.querySelector('.formData');
+const modal = document.querySelector('.modal');
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  modal.classList.toggle('active');
+  body.classList.toggle('active');
+  form.reset();
+});
+
+const modalClose = document.querySelector('.modal__close');
+modalClose.addEventListener('click', () => {
+  modal.classList.toggle('active');
+  body.classList.remove('active');
+});

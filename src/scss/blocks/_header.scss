@@ -1,6 +1,12 @@
 header {
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.726);
   @include semibold;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  height: 109px;
 }
 .header-container {
   display: flex;
@@ -12,7 +18,7 @@ header {
 }
 .header-links {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   &__item {
     font-size: 23px;
@@ -24,6 +30,7 @@ header {
     display: block;
     content: "";
     height: 1.4px;
+    margin-top: 7px;
     width: 0%;
     transition: width 0.4s ease-in-out;
   }
